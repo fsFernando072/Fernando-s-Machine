@@ -1,0 +1,20 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--fundoHeaderFooter);
+
+    nav{
+        display: flex;
+        gap: 1.5rem;
+
+        a{
+            color: var(--corTexto);
+            text-decoration: none;
+        }
+
+        a.selecionado{
+            color: var(--linkSelec);
+        }
+    }
+}

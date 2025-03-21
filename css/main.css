@@ -1,0 +1,41 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+
+    .principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 12rem;
+        border-radius: 4rem;
+        border: none;
+
+        .textos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem 6rem;
+            gap: 1rem;
+    
+            h1.vermelho{
+                color: var(--textoH1);
+                font-style: italic;
+                text-transform: uppercase;
+                letter-spacing: 0.5rem;
+                font-family: "Roboto-ExtraBold";
+                padding: 0.5rem 1rem;
+                font-size: 2rem;
+                border-bottom: solid 0.2rem var(--textoH1);
+            }
+    
+            p{
+                line-height: 1.5rem;
+            }
+        }
+    }
+
+}

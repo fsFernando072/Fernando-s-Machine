@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url("../fonte/Roboto/static/Roboto-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roboto-Extrabold";
+    src: url("../fonte/Roboto/static/Roboto-ExtraBold.ttf");
+}
+
+:root{
+    --corTexto: #ffffff;
+    --fundoHeaderFooter: rgba(28,66,132,1);
+    --fundoBody: #232c35;
+    --textoH1: rgb(26, 97, 220);
+    --linkSelec: rgb(232, 122, 5);
+}
+
+body{
+    width: 100vw;
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 6rem 1fr 14rem;
+    font-family: "Roboto-Regular";
+    overflow-x: hidden;
+    background-color: var(--fundoBody);
+    color: var(--corTexto);
+}

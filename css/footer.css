@@ -1,0 +1,41 @@
+footer{
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    background-color: var(--fundoHeaderFooter);
+
+    .links{
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            p{
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            img{
+                width: 1.25rem;
+                height: 1.25rem;
+                object-fit: cover;
+            }
+
+            a{
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
