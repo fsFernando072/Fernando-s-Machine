@@ -54,13 +54,14 @@ main{
 
         .botao:hover{
             background-color: var(--fundoHeaderFooter);
-            color: var(--corTexto);
+            color: var(--corLinks);
         }
 
         input, select{
             padding: 1rem;
             border-radius: 0.4rem;
             border: none;
+            background-color: var(--fundoInput);
         }
 
         select{
@@ -73,6 +74,23 @@ main{
             gap: 0.5rem;
         }
 
+    }
+
+    table{
+        border: 0.01rem solid #000000;
+    }
+    
+    th{
+        color: #ffffff;
+        background-color: #000000;
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+    
+    td{
+        background-color: #00000035;
+        text-align: center;
+        padding: 0.5rem 1rem;
     }
     
     #mostrar_resposta{

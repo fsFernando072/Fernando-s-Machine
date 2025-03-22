@@ -14,9 +14,9 @@ function converterBin(){
     mostrar.style.display = 'flex';
 
     resposta.innerHTML = 
-    `<h1 class="titulo"> Resultado </h1>
-    <p> <b> Decimal: </b> ${binario.toString(10)} </p>
-    <p> <b> Octal: </b> ${binario.toString(8)} </p>
-    <p> <b> Hexadecimal: </b> ${binario.toString(16)} </p>
-    `
+        `<h1 class="titulo"> Resultado </h1>
+        <p> <b> Decimal: </b> ${binario.toString(10)} </p>
+        <p> <b> Octal: </b> ${binario.toString(8)} </p>
+        <p> <b> Hexadecimal: </b> ${binario.toString(16)} </p>
+        `;
 }

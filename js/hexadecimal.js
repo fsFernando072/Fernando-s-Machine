@@ -14,9 +14,9 @@ function converterHex(){
     mostrar.style.display = 'flex';
 
     resposta.innerHTML = 
-    `<h1 class="titulo"> Resultado </h1>
-    <p> <b> Binário: </b> ${hexa.toString(2)} </p>
-    <p> <b> Octal: </b> ${hexa.toString(8)} </p>
-    <p> <b> Decimal: </b> ${hexa.toString(10)} </p>
-    `
+        `<h1 class="titulo"> Resultado </h1>
+        <p> <b> Binário: </b> ${hexa.toString(2)} </p>
+        <p> <b> Octal: </b> ${hexa.toString(8)} </p>
+        <p> <b> Decimal: </b> ${hexa.toString(10)} </p>
+        `;
 }

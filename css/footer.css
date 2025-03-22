@@ -2,9 +2,10 @@ footer{
     display: grid;
     grid-template-rows: 5fr 1fr;
     background-color: var(--fundoHeaderFooter);
+    color: var(--corLinks);
     
     a{
-        color: #ffffff;
+        color: var(--corLinks);
         text-decoration: none;
         transition: all ease-in-out 0.2s;
     }

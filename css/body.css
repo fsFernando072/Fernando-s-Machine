@@ -15,11 +15,22 @@
 }
 
 :root{
+    --corLinks: #ffffff;
+    --corTexto: #000000;
+    --fundoHeaderFooter: rgba(50,100,162,1);
+    --fundoBody: #ffffff;
+    --textoH1: rgb(26, 97, 220);
+    --linkSelec: rgb(232, 122, 5);
+    --fundoInput: #dddddd;
+}
+
+:root .temaescuro{
     --corTexto: #ffffff;
     --fundoHeaderFooter: rgba(28,66,132,1);
     --fundoBody: #232c35;
     --textoH1: rgb(26, 97, 220);
     --linkSelec: rgb(232, 122, 5);
+    --fundoInput: #ffffff;
 }
 
 body{
@@ -31,4 +42,5 @@ body{
     overflow-x: hidden;
     background-color: var(--fundoBody);
     color: var(--corTexto);
+    transition: all 0.2s ease-in-out;
 }

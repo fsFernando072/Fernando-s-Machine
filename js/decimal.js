@@ -14,9 +14,9 @@ function converterDec(){
     mostrar.style.display = 'flex';
 
     resposta.innerHTML = 
-    `<h1 class="titulo"> Resultado </h1>
-    <p> <b> Binário: </b> ${decimal.toString(2)} </p>
-    <p> <b> Octal: </b> ${decimal.toString(8)} </p>
-    <p> <b> Hexadecimal: </b> ${decimal.toString(16)} </p>
-    `
+        `<h1 class="titulo"> Resultado </h1>
+        <p> <b> Binário: </b> ${decimal.toString(2)} </p>
+        <p> <b> Octal: </b> ${decimal.toString(8)} </p>
+        <p> <b> Hexadecimal: </b> ${decimal.toString(16)} </p>
+        `;
 }

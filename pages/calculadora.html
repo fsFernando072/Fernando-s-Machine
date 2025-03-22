@@ -22,6 +22,17 @@
                 <a href="hexadecimal.html"> Hexadecimal </a>
                 <a href="calculadora.html" class="selecionado"> Calculadora </a> 
             </nav>
+
+            <section class="tema">
+                <input type="checkbox" name="check" id="check" class="checkbox">    
+                <label class="labelCheck" for="check">
+                    <img src="../img/icone/luaImg.png" class="icones" alt="Icone da Lua">
+                    <img src="../img/icone/solImg.png" class="icones" alt="Icone da Sol">
+
+
+                    <section class="ball"></section>
+                </label>
+            </section>
         </header>
 
         <main>
@@ -50,6 +61,14 @@
                         </select>
                         <input type="text" name="ipt_num2" id="ipt_num2" placeholder="Digite o segundo número">
                     </section>
+
+                    <label for="sel_resultado"> Selecione a base do resultado </label>
+                    <select name="sel_resultado" id="sel_resultado">
+                        <option value="bin"> Binário </option>
+                        <option value="dec"> Decimal </option>
+                        <option value="oct"> Octal </option>
+                        <option value="hex"> Hexadecimal </option>
+                    </select>
 
                     <label for="sel_operacao"> Selecione a operação </label>
                     <select name="sel_operacao" id="sel_operacao">
@@ -97,4 +116,5 @@
     </body>
 
     <script src="../js/calculadora.js" defer></script>
+    <script src="../js/darkmode.js" defer></script>
 </html>
