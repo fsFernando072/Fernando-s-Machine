@@ -11,7 +11,9 @@
     </head>
     <body>
         <header>
-            <h1> Fernando´s Machine </h1>
+            <a href="../index.html">
+                <h1> Fernando´s Machine </h1>
+            </a>
 
             <nav>
                 <a href="binario.html"> Binário </a>
@@ -25,19 +27,25 @@
         <main>
             <section class="principal">
                 <section class="textos">
-                    <h1 class="vermelho"> Fernando´s Machine </h1>
-                    <p> 
-                        Conheça agora a Fernando´s Machine, que te possibilita converter seus números de diferentes bases para 
-                        outras bases, além da calculadora, que te permite somar, subtrair, multiplicar e dividir dois números de 
-                        diferentes (ou mesmas) bases!
-                    </p>
+                    <h1 class="titulo"> Conversor Hexadecimal </h1>
+
+                    <label for="ipt_hexa"> Digite o número hexadecimal </label>
+                    <input type="text" name="ipt_hexa" id="ipt_hexa" placeholder="Digite o número hexadecimal">
+    
+                    <button onclick="converterHex()" class="botao"> Converter </button>
                 </section>
+            </section>
+
+            <section class="principal" id="mostrar_resposta">
+                <section class="textos" id="resposta"></section>
             </section>
         </main>
 
         <footer>
             <section class="links">
-                <h1> Fernando´s Machine </h1>
+                <a href="../index.html">
+                    <h1> Fernando´s Machine </h1>
+                </a>
 
                 <nav>
                     <h3> Mapa do Site </h3>
@@ -60,4 +68,6 @@
             </section>
         </footer>
     </body>
+
+    <script src="../js/hexadecimal.js" defer></script>
 </html>

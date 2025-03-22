@@ -4,14 +4,20 @@ header{
     align-items: center;
     background-color: var(--fundoHeaderFooter);
 
+    a{
+        color: var(--corTexto);
+        text-decoration: none;
+        transition: all ease-in-out 0.2s;
+    }
+
+    a:hover{
+        color: var(--linkSelec);
+    }
+    
     nav{
         display: flex;
         gap: 1.5rem;
 
-        a{
-            color: var(--corTexto);
-            text-decoration: none;
-        }
 
         a.selecionado{
             color: var(--linkSelec);

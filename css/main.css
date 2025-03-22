@@ -4,6 +4,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 5rem 0;
+    gap: rem;
 
     .principal{
         display: flex;
@@ -12,6 +13,7 @@ main{
         margin: 0 12rem;
         border-radius: 4rem;
         border: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
         .textos{
             display: flex;
@@ -21,21 +23,59 @@ main{
             padding: 3rem 6rem;
             gap: 1rem;
     
-            h1.vermelho{
-                color: var(--textoH1);
-                font-style: italic;
-                text-transform: uppercase;
-                letter-spacing: 0.5rem;
-                font-family: "Roboto-ExtraBold";
-                padding: 0.5rem 1rem;
-                font-size: 2rem;
-                border-bottom: solid 0.2rem var(--textoH1);
-            }
-    
-            p{
-                line-height: 1.5rem;
-            }
         }
-    }
 
+        h1.titulo{
+            color: var(--textoH1);
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            font-family: "Roboto-ExtraBold";
+            padding: 0.5rem 1rem;
+            font-size: 2rem;
+            border-bottom: solid 0.2rem var(--textoH1);
+        }
+
+        p{
+            line-height: 1.5rem;
+        }
+        
+        .botao{
+            background-color: var(--corTexto);
+            color: var(--fundoBody);
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 2rem;
+            border: none;
+            transition: all ease-in-out 0.2s;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .botao:hover{
+            background-color: var(--fundoHeaderFooter);
+            color: var(--corTexto);
+        }
+
+        input, select{
+            padding: 1rem;
+            border-radius: 0.4rem;
+            border: none;
+        }
+
+        select{
+            cursor: pointer;
+        }
+
+        .linha{
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+        }
+
+    }
+    
+    #mostrar_resposta{
+        display: none;
+    }
 }
