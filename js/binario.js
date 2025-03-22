@@ -5,7 +5,7 @@ inputBin.addEventListener('input', () => {
 });
 
 function converterBin(){
-    let binario = Number('0b' + document.querySelector('#ipt_binario').value);
+    let binario = parseInt(document.querySelector('#ipt_binario').value, 2);
 
     let resposta = document.querySelector('#resposta');
 
@@ -17,6 +17,6 @@ function converterBin(){
         `<h1 class="titulo"> Resultado </h1>
         <p> <b> Decimal: </b> ${binario.toString(10)} </p>
         <p> <b> Octal: </b> ${binario.toString(8)} </p>
-        <p> <b> Hexadecimal: </b> ${binario.toString(16)} </p>
+        <p> <b> Hexadecimal: </b> ${binario.toString(16).toUpperCase()} </p>
         `;
 }

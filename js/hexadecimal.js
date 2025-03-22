@@ -5,7 +5,7 @@ inputHexa.addEventListener('input', () => {
 });
 
 function converterHex(){
-    let hexa = Number('0x' + document.querySelector('#ipt_hexa').value);
+    let hexa = parseInt(document.querySelector('#ipt_hexa').value, 16);
 
     let resposta = document.querySelector('#resposta');
 

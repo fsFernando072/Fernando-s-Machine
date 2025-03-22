@@ -5,7 +5,7 @@ inputDec.addEventListener('input', () => {
 });
 
 function converterDec(){
-    let decimal = Number(document.querySelector('#ipt_decimal').value);
+    let decimal = parseInt(document.querySelector('#ipt_decimal').value, 10);
 
     let resposta = document.querySelector('#resposta');
 
@@ -17,6 +17,6 @@ function converterDec(){
         `<h1 class="titulo"> Resultado </h1>
         <p> <b> Binário: </b> ${decimal.toString(2)} </p>
         <p> <b> Octal: </b> ${decimal.toString(8)} </p>
-        <p> <b> Hexadecimal: </b> ${decimal.toString(16)} </p>
+        <p> <b> Hexadecimal: </b> ${decimal.toString(16).toUpperCase()} </p>
         `;
 }

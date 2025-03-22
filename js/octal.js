@@ -5,7 +5,7 @@ inputOct.addEventListener('input', () => {
 });
 
 function converterOct(){
-    let octal = Number('0o' + document.querySelector('#ipt_octal').value);
+    let octal = parseInt(document.querySelector('#ipt_octal').value, 8);
 
     let resposta = document.querySelector('#resposta');
 
@@ -17,6 +17,6 @@ function converterOct(){
         `<h1 class="titulo"> Resultado </h1>
         <p> <b> Binário: </b> ${octal.toString(2)} </p>
         <p> <b> Decimal: </b> ${octal.toString(10)} </p>
-        <p> <b> Hexadecimal: </b> ${octal.toString(16)} </p>
+        <p> <b> Hexadecimal: </b> ${octal.toString(16).toUpperCase()} </p>
         `;
 }

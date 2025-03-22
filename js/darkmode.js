@@ -1,11 +1,11 @@
 const check = document.getElementById('check');
 
 check.addEventListener('change', function({ target }) {
-    setTheme(target.checked ? 'dark' : 'light');
+    mudarTema(target.checked ? 'dark' : 'light');
 });
 
-function setTheme(newTheme) {
-    if(newTheme == 'dark'){
+function mudarTema(novoTema) {
+    if(novoTema == 'dark'){
         if(!document.body.classList.contains('temaescuro')){
             document.body.classList.toggle('temaescuro');
         }
@@ -20,11 +20,11 @@ function setTheme(newTheme) {
         check.checked = false;
     }
   
-    localStorage.setItem('theme', newTheme); 
+    localStorage.setItem('tema', novoTema); 
 }
 
-const theme = localStorage.getItem('theme');
+const tema = localStorage.getItem('tema');
 
-if( theme ) {
-  setTheme(theme)
+if( tema ) {
+  mudarTema(tema)
 }

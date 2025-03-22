@@ -3,6 +3,8 @@ header{
     justify-content: space-around;
     align-items: center;
     background-color: var(--fundoHeaderFooter);
+    position: sticky;
+    top: 0;
 
     a{
         color: var(--corLinks);
