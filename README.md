@@ -4,8 +4,7 @@
 ## Índice
 - <a href="#funcionalidades-do-projeto"> Funcionalidades do Projeto </a>
 - <a href="#tecnologias-utilizadas"> Tecnologias Utilizadas </a> 
-- <a href="#autor"> Autores </a> 
-- <a href="#próximos-passos"> Próximos Passos </a>
+- <a href="#autor"> Autor </a> 
 
 ## Funcionalidades do Projeto
 - [x] Converter bases numéricas em outras bases.
